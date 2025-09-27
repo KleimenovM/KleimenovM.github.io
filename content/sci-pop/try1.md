@@ -1,0 +1,8 @@
+---
+title: "Interesting Astro Fact"
+date: 2025-09-27
+tags: ["stars", "gamma rays"]
+featured_image: "/images/sun.png"
+---
+Content of your article goes here. You can embed YouTube videos via Markdown/HTML.
+
