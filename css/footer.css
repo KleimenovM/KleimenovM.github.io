@@ -1,10 +1,10 @@
+/* Footer styling */
 footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+  background: #ddd;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9em;
+  color: #333;
+  border-top: 1px solid #bbb;
 }
 

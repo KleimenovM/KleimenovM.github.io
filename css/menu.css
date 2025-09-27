@@ -1,0 +1,81 @@
+/* Page layout */
+body {
+  margin: 0;
+  font-family: Montserrat, sans-serif;
+  background-color: #1a1a1a;
+}
+
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar navigation */
+.sidebar {
+  width: 300px;
+  background-color: #1a1a1a;
+  color: white;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Profile image */
+.sidebar img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid #ecf0f1;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* list element */
+.sidebar li {
+  margin-bottom: 15px;
+}
+
+/* link */
+.sidebar a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 1.1em;
+  padding: 10px;
+  <!-- border-radius: 8px; -->
+  transition: background-color 0.3s;
+}
+
+/* link with a coursor on top of it */ 
+.sidebar a:hover {
+  background-color: #333;
+}
+
+/* Responsive: stack on mobile */
+@media (max-width: 700px) {
+  .layout {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .sidebar ul {
+    display: flex;
+    gap: 10px;
+  }
+  .sidebar li {
+    margin-bottom: 0;
+  }
+}
+
