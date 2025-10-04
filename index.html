@@ -7,46 +7,53 @@
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/body.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="icon" type="image/x-icon" href="static/images/galaxy_wh.png">
 </head>
 <body>
-  <div class="layout">
-    <div id="header"></div>
+    <div class="layout">
+        <header>
+            <nav class="sidebar">
+                <h2>Maksim Kleimenov</h2>
+                <img
+                        class="fit-picture"
+                        src="static/images/portrait2025.jpg"
+                        alt="Selfie at IAP, summer 2025" />
+                <ul>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="public/publications.html">Publications</a></li>
+                    <li><a href="public/scipop.html">Popular Science</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <main>
-      <a href="https://esahubble.org/images/heic1502a/zoomable/">
-      <img
-      class="fit-picture"
-      src="static/images/andromeda_small.jpg"
-      alt="The Sharpest ever view of the Andromeda Galaxy by Hubble Space Telescope (Credit: ESA)" />
-      </a>
-    
-      <section id="about">
-        <h2>About Me</h2>
-        <p>
-        Welcome!</p>
-        <p>     
-        I am Maksim, Master 2 student at the Institute Polytechnique de Paris (Palaiseau, Ile-de-France, France) in High-Energy Physics. I started these studies in 2024, after finishing my Bachelor studies in  Moscow Institute of Physics and Technology (Dolgoprudny, Moscow Region, Russia).
-        </p>
-      </section>
+        <main>
+          <a href="https://esahubble.org/images/heic1502a/zoomable/">
+          <img
+          class="fit-picture"
+          src="static/images/andromeda_small.jpg"
+          alt="The Sharpest ever view of the Andromeda Galaxy by Hubble Space Telescope (Credit: ESA)" />
+          </a>
 
-      <section id="contact">
-        <h2>Contact</h2>
-        <p>E-mail: kleimenov.maksim.i"at"gmail.com</p>
-        <p><a href="https://www.linkedin.com/in/maksim-kleimenov-b6014b325/">LinkedIn</a></p>
-      </section>
+          <section id="about">
+            <h2>About Me</h2>
+            <p>
+            Welcome!</p>
+            <p>
+            I am Maksim, Master 2 student at the Institute Polytechnique de Paris (Palaiseau, Île-de-France, France) in High-Energy Physics. I started these studies in 2024, after finishing my Bachelor studies in  Moscow Institute of Physics and Technology (Dolgoprudny, Moscow Region, Russia).
+            </p>
+          </section>
 
-      <footer>
-        <p>Maksim Kleimenov, <script>document.write(new Date().getFullYear());</script></p>
-      </footer>
-    </main>
-  </div>
+          <section id="contact">
+            <h2>Contact</h2>
+            <p>E-mail: kleimenov.maksim.i"at"gmail.com</p>
+            <p><a href="https://www.linkedin.com/in/maksim-kleimenov-b6014b325/">LinkedIn</a></p>
+          </section>
 
-  <script>
-    fetch("public/header.html")
-      .then(res => res.text())
-      .then(html => document.getElementById("header").innerHTML = html)
-      .catch(err => console.error("Error loading header:", err));
-  </script>
+          <footer>
+            <p>Maksim Kleimenov, <script>document.write(new Date().getFullYear());</script></p>
+          </footer>
+        </main>
+    </div>
 </body>
 
 </html>
