@@ -56,7 +56,11 @@ body {
 
 /* link with a coursor on top of it */ 
 .sidebar a:hover {
-  background-color: #333;
+    background-color: #333;
+}
+
+.sidebar a.active {
+    background-color: #333;
 }
 
 /* Responsive: stack on mobile */
