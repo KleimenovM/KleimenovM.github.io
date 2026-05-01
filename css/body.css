@@ -1,20 +1,24 @@
 /* Main content */
 main {
   flex-grow: 1;
-  background: #f9f9f9;
+  background: #0b0e14;
 }
 
+main img {
+  width: 100%;
+  height: auto;
+}
 
 body {
   font-family: Arial, sans-serif;
+  color: #e0e6ed;
   margin: 0;
   padding: 0;
   line-height: 1.6;
 }
 
-main img {
-  max-width: 100%;
-  height: auto;
+a {
+  color: #f6ad55;
 }
 
 section {
@@ -23,12 +27,4 @@ section {
   margin: 0 auto;
 }
 
-/* Responsive: stack on mobile */
-@media (max-width: 700px) {
-  main img {
-  min-height: 200px;
-  width: auto;
-  overflow: hidden;
-}
-}
 

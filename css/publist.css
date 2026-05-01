@@ -1,9 +1,9 @@
 .publist a{
-    color: #116795;
+    color: #4fd1c5;
     text-decoration: none;
 }
 
 .publist a:hover{
-    color: #941660;
+    color: #f6ad55;
     text-decoration: underline;
 }
