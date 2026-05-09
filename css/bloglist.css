@@ -1,0 +1,9 @@
+.bloglist li{
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.bloglist p{
+    font-size: 1em;
+    font-family: serif;
+}
