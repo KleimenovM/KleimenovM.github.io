@@ -59,7 +59,7 @@
 /* Images */
 .notes img {
     display: block;
-    width: 60%;
+    width: 70%;
     margin: 2.5rem auto;
 }
 
@@ -87,7 +87,7 @@
 @media (max-width: 700px) {
 
     .notes {
-        font-size: 1.05rem;
+        font-size: 1.5rem;
     }
 
     .notes .content {
@@ -100,10 +100,11 @@
     }
 
     .notes h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
 
     .notes h2 {
         font-size: 1.6rem;
     }
+
 }
