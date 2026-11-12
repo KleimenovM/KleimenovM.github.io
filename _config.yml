@@ -1,0 +1,10 @@
+title: Maksim Kleimenov
+url: "https://kleimenovm.github.io"
+baseurl: ""
+
+# Keep development files out of the published website.
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

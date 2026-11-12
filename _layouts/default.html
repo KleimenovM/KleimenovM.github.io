@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title | escape }}</title>
+  <link rel="stylesheet" href="{{ '/css/body.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/css/menu.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/css/footer.css' | relative_url }}">
+  {% for stylesheet in page.stylesheets %}
+  <link rel="stylesheet" href="{{ stylesheet | relative_url }}">
+  {% endfor %}
+  <link rel="icon" type="image/png" href="{{ '/static/images/galaxy_wh.png' | relative_url }}">
+</head>
+<body>
+  <div class="layout">
+    <header>
+      {% include navigation.html %}
+    </header>
+    <main>
+      {{ content }}
+    </main>
+  </div>
+</body>
+</html>
