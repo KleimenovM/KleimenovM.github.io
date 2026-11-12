@@ -1,9 +1,13 @@
-.publist a{
+@layer base, components;
+
+@layer components {
+  .publist a {
     color: #4fd1c5;
     text-decoration: none;
-}
+  }
 
-.publist a:hover{
+  .publist a:hover {
     color: #f6ad55;
     text-decoration: underline;
+  }
 }
