@@ -1,38 +1,233 @@
 ---
 layout: default
 title: "Maksim Kleimenov"
+stylesheets:
+  - /css/resume.css
 ---
 
 <a href="https://esahubble.org/images/heic1502a/zoomable/">
-              <img
-                class="fit-picture"
-                src="static/images/andromeda_small.jpg"
-                alt="The Sharpest ever view of the Andromeda Galaxy by Hubble Space Telescope (Credit: ESA)"
-              />
-          </a>
+  <img
+    class="fit-picture"
+    src="{{ '/static/images/andromeda_small.jpg' | relative_url }}"
+    alt="The Andromeda Galaxy photographed by the Hubble Space Telescope (Credit: ESA)"
+  >
+</a>
 
-          <section id="about">
-            <h2>Welcome!</h2>
-            <p>
-              I am Maksim, Astrophysics PhD Strudent at Université Paris Cité,
-              Laboratoire AstroParticule et Cosmologie (APC, Paris, France). I finished my Master
-              studies at Institute Polytechnique de Paris (Palaiseau, Île-de-France, France) in High-Energy Physics,
-              I did my Bachelor studies at Moscow Institute of Physics and Technology
-              (Dolgoprudny, Moscow Region, Russia).
-            </p>
-          </section>
+<article class="resume">
+  <header id="about">
+    <h1>Maksim Kleimenov</h1>
+    <p><strong>Astrophysics PhD student</strong><br>
+      Université Paris Cité · Laboratoire AstroParticule et Cosmologie (APC)<br>
+      Paris, France</p>
+    <p>Welcome! I am Maksim, an astrophysics PhD student at Université Paris Cité,
+      based at APC in Paris. I completed my master’s studies in High-Energy Physics
+      at Institut Polytechnique de Paris and my bachelor’s studies at the Moscow
+      Institute of Physics and Technology.</p>
+    <p>My research interests include astroparticle and neutrino physics. I have experience
+      in phenomenological modeling and statistical data analysis with Python and C++.</p>
+    <p class="resume-links">
+      <a href="#research">Research &amp; publications</a>
+      <a href="#contact">Contact</a>
+      <a href="https://github.com/KleimenovM">GitHub</a>
+      <a href="https://www.linkedin.com/in/maksim-kleimenov-b6014b325/">LinkedIn</a>
+    </p>
+  </header>
 
-            <section>
-                <a href="static/documents/CV_Kleimenov-Mar2026.pdf">
-                    "Resume (March 2026)"</a>
-            </section>
+  <section aria-labelledby="research">
+    <h2 id="research">Research Experience</h2>
+    <p class="resume-meta">Project dates and internship statuses below follow my March 2026 CV; publication details include subsequent updates.</p>
+    <div class="resume-entry">
+      <h3>Extended emission around Pulsar Wind Nebulae</h3>
+      <p class="resume-meta">Independent project · February 2026–ongoing</p>
+      <p>Laboratoire AstroParticule et Cosmologie (APC), Université Paris Cité · Paris, France</p>
+      <p><strong>Advisers:</strong> Dr. Gwenael Giacinti and Dr. Dmitri Semikoz.</p>
+      <ul>
+        <li>Explain extended X-ray and γ-ray emission misaligned with PWN tails.</li>
+        <li>Phenomenological modeling and particle propagation in turbulent magnetic fields.</li>
+      </ul>
+    </div>
+    <div class="resume-entry">
+      <h3>Searching for extreme blazars in H.E.S.S. data</h3>
+      <p class="resume-meta">M2 internship project · October 2025–ongoing</p>
+      <p>Laboratoire Leprince-Ringuet (LLR), IP Paris · Palaiseau, France</p>
+      <p><strong>Adviser:</strong> Dr. Stephen Fegan, with Dr. Mathieu de Naurois and Dr. Alessandro Montanari.</p>
+      <ul>
+        <li>Search for extreme blazars in H.E.S.S. data and determine their spectra and light curves.</li>
+        <li>Constrain EBL and IGMF using the spectra and GeV halos.</li>
+        <li>Fermi-LAT and H.E.S.S. data analysis with fermipy, ParisAnalysis, and gammapy; SSC blazar models.</li>
+      </ul>
+    </div>
+    <div class="resume-entry" id="V4641">
+      <h3>Lepto-hadronic model of Galactic microquasar V4641 Sgr</h3>
+      <p class="resume-meta">M1 internship project · March–July 2025 · Grade: 19/20</p>
+      <p>Laboratoire AstroParticule et Cosmologie (APC), Université Paris Cité · Paris, France</p>
+      <p><strong>Adviser:</strong> Dr. Dmitri Semikoz, with Dr. Foteini Oikonomou and Dr. Andrii Neronov.</p>
+      <ul>
+        <li>Develop a lepto-hadronic model of the γ-ray signal: inverse Compton, bremsstrahlung, synchrotron, and π-decay.</li>
+        <li>Study source morphology and anisotropic diffusion of cosmic rays in the local Galactic magnetic field.</li>
+        <li>Analytical modeling and am3 with MCMC parameter optimization; analysis of Galactic dust and CO, HI, and HII maps.</li>
+        <li>Results: reports at ICRC 2025 (F. Oikonomou) and ICAP 2026 (M. Kleimenov); article published in Physical Review D (May 2026).</li>
+      </ul>
+      <h4>Research report</h4>
+      <p><a href="{{ '/static/documents/2025-Kleimenov_Internship_Report_lepto_hadronic_models_signed.pdf' | relative_url }}">Lepto-hadronic model of Galactic microquasars explaining ultra-high energy gamma-ray observations</a>.</p>
+      <h4>Publications</h4>
+      <ul class="research-publications">
+      <li>M. Kleimenov, A. Neronov, F. Oikonomou, and D. Semikoz.
+        <a href="https://doi.org/10.1103/bmdz-54dk">Leptonic and Hadronic Models of High-energy Nebula Around V4641 Sgr.</a>
+        Physical Review D, May 2026. DOI: 10.1103/bmdz-54dk.
+        <a href="https://arxiv.org/abs/2512.13578">Preprint: arXiv:2512.13578</a>.</li>
+      <li>M. Kleimenov, A. Neronov, F. Oikonomou, and D. Semikoz.
+        <a href="https://doi.org/10.22323/1.501.0786">Multimessenger emission from the PeVatron Microquasar V4641 Sagittarii.</a>
+        PoS (39th International Cosmic Ray Conference, ICRC 2025) 786, September 2025.</li>
+      </ul>
+    </div>
+    <div class="resume-entry" id="EBL">
+      <h3>Signatures of EBL absorption in STeVECat data</h3>
+      <p class="resume-meta">M1 research project · November 2024–March 2025 · Grade: 18/20</p>
+      <p>Laboratoire Leprince-Ringuet (LLR), IP Paris · Palaiseau, France</p>
+      <p><strong>Adviser:</strong> Dr. Stephen Fegan.</p>
+      <ul>
+        <li>Develop a tool for EBL absorption calculation, analyze STeVECat entries, and derive the EBL impact.</li>
+        <li>Curved space-time opacity with astropy and gammapy; Bayesian inference and MCMC with emcee.</li>
+      </ul>
+      <h4>Research report</h4>
+      <p><a href="{{ '/static/documents/2025-Kleimenov_Searching_for_EBL_signatures-mod.pdf' | relative_url }}">Searching for EBL signatures in CTAO internal data challenge</a>.</p>
+    </div>
+    <div class="resume-entry" id="Baikal">
+      <h3>Baikal-GVD sensitivity to selected neutrino sources</h3>
+      <p class="resume-meta">Bachelor thesis · November 2022–July 2024 · Grade: 10/10</p>
+      <p>Laboratory of High Energy Neutrino Astrophysics, Institute for Nuclear Research · Moscow, Russia</p>
+      <p><strong>Adviser:</strong> Dr. Dmitry Zaborov.</p>
+      <ul>
+        <li>Compute Earth propagation effects and sensitivity for point sources and the Galactic Ridge.</li>
+        <li>Neutrino propagation with νFATE; BDT with C++, ROOT, and TMVA; Feldman–Cousins method with PyROOT.</li>
+        <li>Optimized numerical integration with numpy, scipy, and numba.</li>
+        <li>Results: reports at AYSS 2024 and MFTI 2025; publications in PEPAN Letters; co-author in the Baikal-GVD collaboration.</li>
+      </ul>
+      <h4>Bachelor thesis</h4>
+      <p><a href="{{ '/static/documents/2024-Kleimenov-bachelor-thesis_-_Stydying-the-sensitivity.pdf' | relative_url }}">Study of the sensitivity of the Baikal-GVD detector to neutrino fluxes from individual Galactic and extragalactic sources</a> (in Russian).</p>
+      <h4>Publications</h4>
+      <ul class="research-publications">
+      <li>M. I. Kleimenov and D. N. Zaborov.
+        <a href="https://doi.org/10.1134/S1547477124700912">Expected Neutrino Rates from Point-Like Astrophysical Sources in Baikal GVD.</a>
+        Phys. Part. Nuclei Lett. 21, 646–649 (August 2024).</li>
+      <li>V. A. Allakhverdyan, A. D. Avrorin, A. V. Avrorin, M. I. Kleimenov, D. N. Zaborov et al. (Baikal-GVD Collaboration).
+        <a href="https://doi.org/10.1088/1742-6596/2984/1/012023">Real-time follow-up of multimessenger alerts at the Baikal-GVD telescope.</a>
+        J. Phys.: Conf. Ser. 2984, 012023 (April 2025).</li>
+      <li>V. A. Allakhverdyan, A. D. Avrorin, A. V. Avrorin, M. I. Kleimenov, D. N. Zaborov et al. (Baikal-GVD Collaboration).
+        <a href="https://doi.org/10.3847/1538-4357/adb630">Probing the Galactic neutrino flux at neutrino energies above 200 TeV with the Baikal Gigaton Volume Detector.</a>
+        Astrophys. J. 982, 73 (March 2025).</li>
+      <li>D. V. Zaborov, V. A. Allakhverdyan, A. D. Avrorin, M. I. Kleimenov et al.
+        <a href="https://doi.org/10.1134/S1063778825601374">Neutrino Astronomy at Lake Baikal.</a>
+        Phys. Atom. Nuclei 88, 852–858 (2025).</li>
+      </ul>
+    </div>
+  </section>
 
-          <section id="contact">
-            <h2>Contact</h2>
-            <p>E-mail: kleimenov.maksim.i"at"gmail.com</p>
-            <p><a href="https://www.linkedin.com/in/maksim-kleimenov-b6014b325/">LinkedIn</a></p>
-          </section>
+  <section aria-labelledby="education">
+    <h2 id="education">Education &amp; Relevant Coursework</h2>
+    <div class="resume-entry">
+      <h3>PhD in Astrophysics</h3>
+      <p>Université Paris Cité · Laboratoire AstroParticule et Cosmologie (APC) · Paris, France</p>
+      <p class="resume-meta">Current</p>
+    </div>
+    <div class="resume-entry">
+      <h3>M.Sc. in High-Energy Physics</h3>
+      <p>Institut Polytechnique de Paris (IP Paris) · Palaiseau, Île-de-France, France</p>
+      <p class="resume-meta">Completed · Started September 2024 · GPA: 18.3/20.0</p>
+    </div>
+    <div class="resume-entry">
+      <h3>B.Sc. in Applied Mathematics and Physics</h3>
+      <p>Moscow Institute of Physics and Technology (MIPT) · Dolgoprudny, Moscow Region, Russia</p>
+      <p class="resume-meta">September 2020–July 2024 · GPA: 4.93/5.00</p>
+    </div>
+    <dl>
+      <dt>High-Energy Physics</dt>
+      <dd>QFT I–III, particle physics, neutrino physics, electroweak interactions, QCD.</dd>
+      <dt>Astrophysics</dt>
+      <dd>Stellar astrophysics, compact objects, astroparticles, general relativity, cosmology, gravitational waves.</dd>
+      <dt>Plasma Physics</dt>
+      <dd>Space plasmas, MHD, kinetic theory, waves and instabilities, astrophysical plasmas.</dd>
+    </dl>
+  </section>
 
-          <footer>
-            <p>Maksim Kleimenov, <script>document.write(new Date().getFullYear());</script></p>
-          </footer>
+  <section aria-labelledby="skills">
+    <h2 id="skills">Skills</h2>
+    <dl>
+      <dt>Programming</dt>
+      <dd>Python (astropy, gammapy, am3, PyROOT, fermipy); C++ (ROOT, TMVA, GSL); Kotlin.</dd>
+      <dt>Data analysis</dt>
+      <dd>Likelihood fitting, Bayesian inference, MCMC.</dd>
+      <dt>Languages</dt>
+      <dd>English (C1, IELTS: 8.0), French (B2), German (B1), Russian (native).</dd>
+    </dl>
+  </section>
+
+
+  <section aria-labelledby="conferences">
+    <h2 id="conferences">Conferences &amp; Schools</h2>
+    <ul>
+      <li><strong>Initiative in Cosmology and AstroParticle Physics seminar</strong> (organized by J. Silk) · IAP, Paris, France · March 2026.<br>
+        Models of extended high-energy emission from microquasar V4641 Sgr.</li>
+      <li><strong>The 66th MIPT Conference</strong> · Dolgoprudny, Russia · April 2024.<br>
+        Expected neutrino rates in Baikal-GVD telescope. Second-degree diploma; theses published in the “Trudy MFTI” journal.</li>
+      <li><strong>The XXVII International Scientific Conference of Young Scientists and Specialists</strong> · Dubna, Russia · October 2023.<br>
+        Expected neutrino rates from point-like astrophysical sources in Baikal-GVD. Best report.</li>
+      <li><strong>Astroparticle Symposium 2025</strong> · Institut Pascal, Orsay, France · November 2025.</li>
+      <li><strong>Astroparticle Symposium 2024</strong> · Institut Pascal, Orsay, France · November 2024.</li>
+      <li><strong>Autumn School for Physics of Quark-gluon matter</strong> · JINR, Dubna, Russia · November 2023.</li>
+      <li><strong>23rd Baikal School on Physics of Elementary Particles and Astrophysics</strong> · Irkutsk, Russia · July 2023.</li>
+      <li><strong>School for Physics and Technique of Particle Accelerators</strong> · JINR, Dubna, Russia · July 2023.</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="teaching">
+    <h2 id="teaching">Teaching &amp; Leadership</h2>
+    <div class="resume-entry">
+      <h3>Intern-Teacher · Moscow School 1543</h3>
+      <p class="resume-meta">2021–2024</p>
+      <p>Developed and taught an elective physics course.</p>
+    </div>
+    <div class="resume-entry">
+      <h3>Intern-Teacher · Letovo School</h3>
+      <p class="resume-meta">2023–2024</p>
+      <p>Prepared laboratory work and in-class exercises.</p>
+    </div>
+  </section>
+
+  <section aria-labelledby="awards">
+    <h2 id="awards">Honors &amp; Awards</h2>
+    <ul>
+      <li><strong>“I am the professional”</strong> · Winner in the “megascience” experimental setups section · Moscow, Russia · June 2024.</li>
+      <li><strong>15th International Physicists’ Tournament</strong> · 3rd place (IPT Team) · Paris, France · April 2023.</li>
+      <li><strong>13th International Physicists’ Tournament</strong> · Winner (Team Russia) · Warsaw, Poland (online) · July 2021.</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="other-projects">
+    <h2 id="other-projects">Miscellaneous Research Projects</h2>
+    <h3>Physicists’ Tournament projects</h3>
+    <ul>
+      <li><strong>Mendocino meter</strong> · Adviser: Dr. A. Svetlichnyi · 7.8/10 at IPT 2023 · September–January 2023.</li>
+      <li><strong>Ferromagnetic patterns</strong> · Adviser: Dr. G. Fedorov · 9.0/10.0 at RuPT 2022 · September–March 2022.</li>
+      <li><strong>Finger of death</strong> · Adviser: Dr. V. Vanovskiy · 9.0/10.0 at IPT 2021; best reporter · January–June 2021.</li>
+    </ul>
+    <h3>MIPT project course</h3>
+    <ul>
+      <li><strong>Restoration of tunnel diode parameters</strong> · Adviser: Dr. S. Zhabin · 10/10 · April–May 2023.</li>
+      <li><strong>Investigation of Compton effect on X-ray photons</strong> · Adviser: Dr. A. Svetlichnyi · 9/10 · October 2022–January 2023.</li>
+      <li><strong>Designing a setup for scanning interferometry</strong> · Adviser: Dr. V. Vanovskiy · 10/10 · February–May 2022.</li>
+      <li><strong>Updated DANNS sterile neutrino detector sensitivity</strong> · Adviser: Dr. N. Skrobova · 9/10 · October–December 2021.</li>
+      <li><strong>Cumulative jets in granular media</strong> · Adviser: Dr. S. Vinogradov · 9/10 · October–December 2020.</li>
+    </ul>
+  </section>
+  <section aria-labelledby="contact">
+    <h2 id="contact">Contact</h2>
+    <p>E-mail: kleimenov.maksim.i"at"gmail.com</p>
+    <p><a href="https://www.linkedin.com/in/maksim-kleimenov-b6014b325/">LinkedIn</a></p>
+  </section>
+</article>
+
+<footer>
+  <p>Maksim Kleimenov, <script>document.write(new Date().getFullYear());</script></p>
+</footer>

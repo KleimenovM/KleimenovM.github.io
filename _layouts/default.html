@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title | escape }}</title>
+  {% if page.redirect_to %}
+  <meta http-equiv="refresh" content="0; url={{ page.redirect_to | relative_url | escape }}">
+  <link rel="canonical" href="{{ page.redirect_to | split: '#' | first | absolute_url }}">
+  {% endif %}
   <link rel="stylesheet" href="{{ '/css/body.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/css/menu.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/css/footer.css' | relative_url }}">

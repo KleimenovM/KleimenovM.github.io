@@ -1,0 +1,77 @@
+@layer base, components;
+
+@layer components {
+  .resume {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    overflow-wrap: anywhere;
+  }
+
+  .resume section {
+    max-width: none;
+    margin: 2.5rem 0 0;
+    padding: 0;
+  }
+
+  .resume h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+
+  .resume h2 {
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid #4d5768;
+  }
+
+  .resume h3 {
+    margin-bottom: 0.35rem;
+    line-height: 1.4;
+  }
+
+  .resume h4 {
+    margin: 1.25rem 0 0.5rem;
+  }
+
+  .research-publications {
+    padding-left: 1.5rem;
+  }
+
+  .resume-entry + .resume-entry {
+    margin-top: 2rem;
+  }
+
+  .resume-meta {
+    color: #b8c5d6;
+  }
+
+  .resume-entry p {
+    margin: 0.4rem 0;
+  }
+
+  .resume li + li {
+    margin-top: 0.65rem;
+  }
+
+  .resume-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.5rem;
+  }
+
+  .resume dt {
+    margin-top: 1rem;
+    font-weight: bold;
+  }
+
+  .resume dd {
+    margin: 0.25rem 0 0;
+  }
+
+  @media (max-width: 700px) {
+    .resume {
+      padding: 1.5rem;
+    }
+  }
+}
