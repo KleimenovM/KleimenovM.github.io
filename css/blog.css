@@ -6,8 +6,8 @@
   .notes {
     font-family: Georgia, "Times New Roman", serif;
 
-    font-size: 1.15rem;
-    line-height: 1.8;
+    font-size: 1.05rem;
+    line-height: 1.7;
   }
 
   /* Typography */
@@ -78,7 +78,13 @@
   @media (max-width: 700px) {
 
     .notes {
-      font-size: 1.5rem;
+      font-size: 1rem;
+      padding: 1.5rem 1rem;
+    }
+
+    .notes figure {
+      margin-left: 0;
+      margin-right: 0;
     }
 
     .notes img {
@@ -86,12 +92,15 @@
     }
 
     .notes h1 {
-      font-size: 2.2rem;
+      font-size: 1.8rem;
     }
 
     .notes h2 {
-      font-size: 1.6rem;
+      font-size: 1.4rem;
     }
 
+    .notes h3 {
+      font-size: 1.2rem;
+    }
   }
 }
